@@ -1,0 +1,14 @@
+<md-card>
+        <md-toolbar>
+                <div class="md-toolbar-tools">
+                        <h2>
+                                <span>{{name}}</span>
+                        </h2>
+                        <span flex></span>
+                        <h2>{{sets}}x{{reps}} {{weight}}{{unit}}</h2>
+                </div>
+        </md-toolbar>
+        <md-card-content>
+                <set-bubble goal-reps="{{exerciseSet.goalReps}}" ng-repeat="exerciseSet in exerciseSets"></set-bubble>
+        </md-card-content>
+</md-card>
