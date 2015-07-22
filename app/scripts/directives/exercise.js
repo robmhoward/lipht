@@ -16,6 +16,8 @@ angular.module('liphtApp')
         sets: '@',
         reps: '@',
         weight: '@',
+        increment: '@',
+        completed: '@',
         unit: '@'
       },
       link: function postLink(scope, element, attrs) {

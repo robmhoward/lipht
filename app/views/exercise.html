@@ -8,7 +8,10 @@
                         <h2>{{sets}}x{{reps}} {{weight}}{{unit}}</h2>
                 </div>
         </md-toolbar>
-        <md-card-content>
+        <md-card-content ng-hide="{{completed}}">
                 <set-bubble goal-reps="{{exerciseSet.goalReps}}" ng-repeat="exerciseSet in exerciseSets"></set-bubble>
+        </md-card-content>
+        <md-card-content ng-show="{{completed}}">
+                Congrats on finishing your set!  Next time go for {{weight + increment}}{{unit}}.
         </md-card-content>
 </md-card>
